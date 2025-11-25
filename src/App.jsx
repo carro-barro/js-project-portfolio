@@ -1,8 +1,18 @@
+
+import { HeroHeading } from "./components/hero/HeroHeading"
+import { HeroImageMiddle } from "./components/hero/HeroImageMiddle"
+import { HeroImageLeft } from "./components/hero/HeroImageLeft"
+import { HeroImageRight } from "./components/hero/HeroImageRight"
+import { HeroText } from "./components/hero/HeroText"
+
 export const App = () => {
   return (
     <>
-      <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum! Maxime animi nostrum facilis distinctio neque labore consectetur beatae eum ipsum excepturi voluptatum, dicta repellendus incidunt fugiat, consequatur rem aperiam.</p>
+      <HeroHeading></HeroHeading>
+      <HeroImageLeft src="/images/SideProfile-heroImg-2.jpg" />
+      <HeroImageMiddle src="/images/Headshot-heroImg-1.png" />
+      <HeroImageRight src="/images/Painting-heroImg-3.jpg" />
+      <HeroText></HeroText>
     </>
   )
 }
