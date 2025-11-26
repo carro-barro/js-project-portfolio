@@ -20,6 +20,7 @@ font-size: 100px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+color: #000;
 `
 
 export const HeroHeading = () => {

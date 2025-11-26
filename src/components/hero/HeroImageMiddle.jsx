@@ -1,15 +1,9 @@
 import styled from "styled-components"
+import { StyledBaseImages } from "./HeroBaseImages"
 
 
-const StyledImageMiddle = styled.img`
- width: 358px;
- height: 382px;
- object-fit: cover;
- display: flex;
- justify-self: center;
-
- margin: 16px 0;
- border-radius: 12px;
+const StyledImageMiddle = styled(StyledBaseImages)`
+z-index: 1;
 `
 
 export const HeroImageMiddle = (props) => {
