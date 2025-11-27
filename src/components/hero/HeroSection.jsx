@@ -1,9 +1,7 @@
 import styled from "styled-components"
 import { HeroHeading } from "./HeroHeading"
-import { HeroImageLeft } from "./HeroImageLeft"
-import { HeroImageMiddle } from "./HeroImageMiddle"
-import { HeroImageRight } from "./HeroImageRight"
-import { HeroText } from "./HeroText"
+import { HeroImage } from "./HeroImage"
+import { HeroText } from "./Herotext"
 
 const StyledImageContainer = styled.div`
 display: flex;
@@ -17,9 +15,9 @@ export const HeroSection = (props) => {
     <>
       <HeroHeading ></HeroHeading>
       <StyledImageContainer>
-        <HeroImageLeft src="/images/SideProfile-heroImg-2.jpg" />
-        <HeroImageMiddle src="/images/Headshot-heroImg-1.png" />
-        <HeroImageRight src="/images/Painting-heroImg-3.jpg" />
+        <HeroImage position="left" src="/images/hero/SideProfile-heroImg-2.jpg" />
+        <HeroImage position="middle" src="/images/hero/Headshot-heroImg-1.png" />
+        <HeroImage position="right" src="/images/hero/Painting-heroImg-3.jpg" />
       </StyledImageContainer>
       <HeroText></HeroText>
     </>

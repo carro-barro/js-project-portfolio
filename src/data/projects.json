@@ -2,7 +2,8 @@
   "projects": [
     {
       "name": "Business site",
-      "image": "/images/projects",
+      "info": "A simple business site for a fictional cat subscription. Where you can look at products, read articles about cats and also send in a form with details of your subscription request. For a fun flare i added a JavaScript party mode toggle and a clickable talking cat in the footer.",
+      "image": "/images/projects/business-site.png",
       "tags": [
         "HTML5",
         "CSS3",
@@ -13,7 +14,8 @@
     },
     {
       "name": "Recipe library",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "info": "Using spoonaculars API I have fetched a library of recipes that displays ingredients, cooking time and meal type. You can filter and sort by different categories and search for your recipe and aslo with a button click to geta random recipe",
+      "image": "/images/projects/Recipe-library.png",
       "tags": [
         "HTML5",
         "CSS3",
@@ -22,10 +24,11 @@
       ],
       "netlify": "https://carolinas-recipe-library.netlify.app/",
       "github": "https://github.com/carro-barro/js-project-recipe-library"
-    }
+    },
     {
       "name": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "info": "A weather app that displays the current temperature, condition, sunrise/sunset and precipitation in Stockholm. With a weekly forecast and a meaningful message, used with SMHI's API",
+      "image": "/images/projects/Weather.app.png",
       "tags": [
         "HTML5",
         "CSS3",
@@ -35,10 +38,11 @@
       ],
       "netlify": "https://weather-app-rock-3.netlify.app/",
       "github": "https://github.com/Nicolinabl/js-project-weather-app"
-    }
-      {
+    },
+    {
       "name": "Accessibility site",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "info": "A fictional book club webpage that is made to be accessible for disabled people. Developed with ARIA-labels, semantic HTML, JavaScript modal traps and keyboard navigation.",
+      "image": "/images/projects/Accesibility-site.png",
       "tags": [
         "HTML5",
         "CSS3",

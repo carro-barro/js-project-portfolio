@@ -10,6 +10,7 @@ font-weight: 700;
 line-height: normal;
 `
 
-export const ProjectsHeading = () => {
+export const ProjectHeading = () => {
   return <StyledHeading>Featured Projects</StyledHeading>
+
 }
