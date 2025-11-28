@@ -1,14 +1,20 @@
 import styled from "styled-components"
+import { H3 } from "../typography/H3"
+import { P } from "../typography/P"
 
-const StyledHeading = styled.h2`
-color: #000;
-text-align: center;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+const StyledTextContainer = styled.div`
+  display: flex;
+  width: 580px;
+  flex-direction: column;
+  gap: 32px;
 `
 
-export const ArticleHeading = () => {
-  return <StyledHeading></StyledHeading>
+export const ArticleCardText = ({ name, info }) => {
+  return (
+    <StyledTextContainer>
+      <H3>{name}</H3>
+      <P>{info}</P>
+    </StyledTextContainer>
+  )
 }

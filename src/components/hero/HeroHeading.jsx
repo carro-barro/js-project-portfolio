@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { H1 } from "../typography/H1"
+import { H3 } from "../typography/H3"
 
 const StyledHeadingContainer = styled.div`
   display: flex;
@@ -6,28 +8,11 @@ const StyledHeadingContainer = styled.div`
   align-items: center;
 `
 
-const StyledSmallHeading = styled.p`
-  margin-bottom: 0;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-`
-
-const StyledHeading = styled.h1`
-  margin: 25px 0;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  color: black;
-`
-
 export const HeroHeading = () => {
   return (
     <StyledHeadingContainer>
-      <StyledSmallHeading>Hi there, I'm</StyledSmallHeading>
-      <StyledHeading>Carolina Oldertz</StyledHeading>
+      <H3>Hi there, I'm</H3>
+      <H1>Carolina Oldertz</H1>
     </StyledHeadingContainer>
   )
 }

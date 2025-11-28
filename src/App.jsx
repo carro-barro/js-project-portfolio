@@ -3,6 +3,7 @@ import { HeroSection } from "./components/hero/HeroSection"
 import { TechSection } from "./components/Tech/TechSection"
 import { ProjectSection } from "./components/projects/ProjectSection"
 import { SkillSection } from "./components/Skills/SkillSection"
+import { ArticleSection } from "./components/Articles/ArticleSection"
 
 const GlobalStyles = createGlobalStyle`
 
@@ -20,6 +21,7 @@ export const App = () => {
       <TechSection></TechSection>
       <ProjectSection></ProjectSection>
       <SkillSection></SkillSection>
+      <ArticleSection></ArticleSection>
     </>
   )
 }

@@ -1,10 +1,22 @@
 import styled from "styled-components"
-import { ArticleHeading } from "./ArticleCardText"
+import { ArticleHeading } from "./ArticleHeading"
+import { ArticleCard } from "./ArticleCard"
+import Data from "../../data/articles.json"
 
 export const ArticleSection = () => {
   return (
     <>
-      <ArticleHeading></ArticleHeading>
+      <ArticleHeading />
+      {Data.articles.map(article => (
+        <ArticleCard
+          key={article.name}
+          dates={article.date}
+          name={article.name}
+          info={article.info}
+          link={article.link}
+          image={article.image}
+        />
+      ))}
     </>
   )
 }

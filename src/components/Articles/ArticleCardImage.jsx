@@ -6,6 +6,6 @@ align-self: stretch;
 border-radius: 12px;
 `
 
-export const ArticleImage = ({ src, alt }) => {
+export const ArticleCardImage = ({ src, alt }) => {
   return <StyledImage src={src} alt={alt} />
 }

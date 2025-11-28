@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { P } from "../typography/P"
 
 
 const StyledInfo = styled.p`
@@ -13,13 +13,13 @@ line-height: normal;
 export const SkillInfo = () => {
   return (
     <>
-      <StyledInfo>HTML5
+      <P>HTML5
         CSS3
         Javascript ES6
         TypeScript
         Styled Components
-        GitHub</StyledInfo>
-      <StyledInfo>Atom
+        GitHub</P>
+      <P>Atom
         Postman
         Adobe Photoshop
         Adobe Illustrator
@@ -33,12 +33,12 @@ export const SkillInfo = () => {
         Sitecore (CMS) Sitevison (CMS) Shopify
         Figma
         Microsoft (Word, ppt, etc)
-        Slack</StyledInfo>
-      <StyledInfo>Node.js
+        Slack</P>
+      <P>Node.js
         React
         MongoDB
-        Express.js</StyledInfo>
-      <StyledInfo>Branding
+        Express.js</P>
+      <P>Branding
         Strategy
         Process Design
         Concept Development
@@ -47,7 +47,7 @@ export const SkillInfo = () => {
         Version Control (Git workflows)
         Creative Problem-Solving
         Cross-functional Collaboration
-        UX & UI</StyledInfo>
+        UX & UI</P>
     </>
   )
 }

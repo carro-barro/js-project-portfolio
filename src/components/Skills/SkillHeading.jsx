@@ -1,14 +1,6 @@
 import styled from "styled-components"
-
-const StyledHeading = styled.h2`
-color: #FFF;
-text-align: center;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-`
+import { H2 } from "../typography/H2"
 
 export const SkillHeading = () => {
-  return <StyledHeading>Skills</StyledHeading>
+  return <H2>Skills</H2>
 }

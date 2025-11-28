@@ -2,8 +2,9 @@
 import styled from "styled-components"
 import { ProjectCardText } from "./ProjectCardText"
 import { ProjectCardImage } from "./ProjectCardImage"
-import { Button } from "./Button"
-import { Tag } from "./Tags"
+import { Tag } from "../assets/Tag"
+import { Button } from "../assets/Button"
+
 
 const StyledProjectCard = styled.div`
   display: flex;
@@ -26,8 +27,7 @@ const StyledLeftContent = styled.div`
   gap: 16px;
   align-self: stretch;
   height: 376px;
-  width: 520px
-
+  width: 520px;
 `
 const StyledTagContainer = styled.div`
   display: flex;
