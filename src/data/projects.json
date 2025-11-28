@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Business site",
+      "name": "BUSINESS SITE",
       "info": "A simple business site for a fictional cat subscription. Where you can look at products, read articles about cats and also send in a form with details of your subscription request. For a fun flare i added a JavaScript party mode toggle and a clickable talking cat in the footer.",
       "image": "/images/projects/business-site.png",
       "tags": [
@@ -13,8 +13,8 @@
       "github": "https://github.com/carro-barro/js-project-business-site"
     },
     {
-      "name": "Recipe library",
-      "info": "Using spoonaculars API I have fetched a library of recipes that displays ingredients, cooking time and meal type. You can filter and sort by different categories and search for your recipe and aslo with a button click to geta random recipe",
+      "name": "RECIPE LIBRARY",
+      "info": "Using spoonaculars API I have fetched a library of recipes that displays ingredients, cooking time and meal type. You can filter and sort by different categories and search for your recipe and aslo with a button click to geta random recipe.",
       "image": "/images/projects/Recipe-library.png",
       "tags": [
         "HTML5",
@@ -26,9 +26,9 @@
       "github": "https://github.com/carro-barro/js-project-recipe-library"
     },
     {
-      "name": "Weather app",
-      "info": "A weather app that displays the current temperature, condition, sunrise/sunset and precipitation in Stockholm. With a weekly forecast and a meaningful message, used with SMHI's API",
-      "image": "/images/projects/Weather.app.png",
+      "name": "WEATHER APP",
+      "info": "A weather app that displays the current temperature, condition, sunrise/sunset and precipitation in Stockholm. With a weekly forecast and a meaningful message, used with SMHI's API.",
+      "image": "/images/projects/Weather-app.png",
       "tags": [
         "HTML5",
         "CSS3",
@@ -40,7 +40,7 @@
       "github": "https://github.com/Nicolinabl/js-project-weather-app"
     },
     {
-      "name": "Accessibility site",
+      "name": "ACCESSIBILITY SITE",
       "info": "A fictional book club webpage that is made to be accessible for disabled people. Developed with ARIA-labels, semantic HTML, JavaScript modal traps and keyboard navigation.",
       "image": "/images/projects/Accesibility-site.png",
       "tags": [

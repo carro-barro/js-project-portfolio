@@ -11,11 +11,14 @@ export const ProjectSection = () => {
       {data.projects.map(project => (
         <ProjectCard
           key={project.name}
+          tags={project.tags}
           name={project.name}
           info={project.info}
+          netlify={project.netlify}
+          github={project.github}
           image={project.image}
         />
       ))}
     </>
-  );
-};
+  )
+}
