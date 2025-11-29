@@ -19,7 +19,7 @@ export const HeroSection = (props) => {
         <HeroImage position="middle" src="/images/hero/Headshot-heroImg-1.png" />
         <HeroImage position="right" src="/images/hero/Painting-heroImg-3.jpg" />
       </StyledImageContainer>
-      <></>
+      <HeroText></HeroText>
     </>
   )
 }
