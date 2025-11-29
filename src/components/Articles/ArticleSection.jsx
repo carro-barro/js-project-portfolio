@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { ArticleHeading } from "./ArticleHeading"
+
+import { ArticleHeading } from "./ArticleHeading.jsx"
 import { ArticleCard } from "./ArticleCard"
 import Data from "../../data/articles.json"
 
