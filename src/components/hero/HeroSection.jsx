@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { HeroHeading } from "./HeroHeading"
 import { HeroImage } from "./HeroImage"
-import { HeroText } from "./Herotext"
+import { HeroText } from "./HeroText"
 
 const StyledImageContainer = styled.div`
 display: flex;
@@ -19,7 +19,7 @@ export const HeroSection = (props) => {
         <HeroImage position="middle" src="/images/hero/Headshot-heroImg-1.png" />
         <HeroImage position="right" src="/images/hero/Painting-heroImg-3.jpg" />
       </StyledImageContainer>
-      <HeroText></HeroText>
+      <></>
     </>
   )
 }
