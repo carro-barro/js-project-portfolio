@@ -3,7 +3,7 @@ import { HeroSection } from "./components/hero/HeroSection"
 import { TechSection } from "./components/Tech/TechSection"
 import { ProjectSection } from "./components/projects/ProjectSection"
 import { SkillSection } from "./components/Skills/SkillSection"
-import { ArticleSection } from "./components/Articles/ArticleSection"
+import { ArticleSection } from "./components/articles/ArticleSection"
 import { FooterSection } from "./components/footer/FooterSection"
 
 const GlobalStyles = createGlobalStyle`
