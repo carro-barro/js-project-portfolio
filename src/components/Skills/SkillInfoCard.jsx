@@ -2,31 +2,21 @@ import styled from "styled-components"
 import { SkillInfo } from "./SkillInfo"
 import { SkillTags } from "./SkillTags"
 
-const StyledInfoContainer = styled.div`
-display: flex;
-width: 177px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-flex-shrink: 0;
-`
-
+// width: 177px;
 const StyledInfoCard = styled.div`
 display: flex;
-width: 177px;
+width: 250px;
 flex-direction: column;
 align-items: flex-start;
 gap: 16px;
 flex-shrink: 0;
 `
 
-export const SkillInfoCard = () => {
+export const SkillInfoCard = ({ tag, info }) => {
   return (
-    <StyledInfoContainer>
-      <StyledInfoCard>
-        <SkillTags></SkillTags>
-        <SkillInfo></SkillInfo>
-      </StyledInfoCard>
-    </StyledInfoContainer>
+    <StyledInfoCard>
+      <SkillTags tag={tag} />
+      <SkillInfo info={info} />
+    </StyledInfoCard>
   )
 }

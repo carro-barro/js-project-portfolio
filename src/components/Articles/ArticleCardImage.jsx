@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 const StyledImage = styled.img`
 width: 479px;
-align-self: stretch;
+height: 311px;
+object-fit: cover;
 border-radius: 12px;
 `
 

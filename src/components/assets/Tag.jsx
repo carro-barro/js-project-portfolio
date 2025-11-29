@@ -4,7 +4,6 @@ const StyledTagContainer = styled.div`
 display: flex;
 padding: 2px 6px;
 justify-content: center;
-flex: 1 0 0;
 height: 28px;
 border-radius: 4px;
 border: 1px solid #000;
@@ -21,10 +20,10 @@ line-height: normal;
 margin: auto;
 `
 
-export const Tag = ({ tag }) => {
+export const Tag = ({ tag, className }) => {
   return (
     <>
-      <StyledTagContainer>
+      <StyledTagContainer className={className}>
         <StyledTagText>{tag}</StyledTagText>
       </StyledTagContainer>
     </>

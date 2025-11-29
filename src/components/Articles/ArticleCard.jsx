@@ -10,21 +10,24 @@ const StyledArticleCard = styled.div`
   gap: 125px;
   align-self: stretch;
   justify-self: center;
-  margin: 0 128px 128px 128px;
-  width: 1184px;
+  max-width: 1195px;
+  widtH: 90%;
+  max-height: 311px;
+  margin: 0 auto 128px auto;
 
 `
-const StyledLeftContainer = styled.div`
-display: flex;
+const StyledTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `
 
-const StyledLeftContent = styled.div`
+const StyledTextContent = styled.div`
  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
-  height: 376px;
   width: 520px
 
 `
@@ -43,31 +46,30 @@ const StyledButtonContainer = styled.div`
   align-self: stretch;
   margin-top: 32px;
 `
+const StyledArticleTag = styled(Tag)`
+width: 142px;
+`
 
 export const ArticleCard = ({ name, info, image, date, link }) => {
   return (
     <StyledArticleCard>
-      <StyledLeftContainer>
-        <StyledLeftContent>
+      <ArticleCardImage src={image} alt={`Illustration for article: ${name}`} />
+      <StyledTextContainer>
+        <StyledTextContent>
           <StyledTagContainer>
-            {date.map(dates => (
-              <Tag key={dates} tag={dates} />
+            {date.map(singleDate => (
+              <StyledArticleTag key={singleDate} tag={singleDate} />
             ))}
           </StyledTagContainer>
           <ArticleCardText name={name} info={info} />
           <StyledButtonContainer>
             <Button
-              href={netlify}
-              text="Live Demo"
+              href={link}
+              text="Read article"
               icon="/icons/Netlify.svg" />
-            <Button
-              href={github}
-              text="View code"
-              icon="/icons/Github.svg" />
           </StyledButtonContainer>
-        </StyledLeftContent>
-      </StyledLeftContainer>
-      <ArticleCardImage src={image} />
+        </StyledTextContent>
+      </StyledTextContainer>
     </StyledArticleCard>
   )
 }

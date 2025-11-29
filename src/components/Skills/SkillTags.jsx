@@ -6,7 +6,7 @@ display: flex;
 height: 28px;
 padding: 2px 6px;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
 align-self: stretch;
 border-radius: 4px;
 border: 1px solid #FFF;
@@ -19,23 +19,13 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+margin: 0;
 `
 
-export const SkillTags = () => {
+export const SkillTags = ({ tag }) => {
   return (
-    <>
-      <StyledTag>
-        <StyledTagText>Code</StyledTagText>
-      </StyledTag>
-      <StyledTag>
-        <StyledTagText>Toolbox</StyledTagText>
-      </StyledTag>
-      <StyledTag>
-        <StyledTagText>Upcoming</StyledTagText>
-      </StyledTag>
-      <StyledTag>
-        <StyledTagText>More</StyledTagText>
-      </StyledTag>
-    </>
+    <StyledTag>
+      <StyledTagText>{tag}</StyledTagText>
+    </StyledTag>
   )
 }

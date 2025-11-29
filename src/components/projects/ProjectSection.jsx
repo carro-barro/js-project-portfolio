@@ -8,7 +8,7 @@ export const ProjectSection = () => {
     <>
       <ProjectHeading />
 
-      {data.projects.map(project => (
+      {data.projects.map((project, index) => (
         <ProjectCard
           key={project.name}
           tags={project.tags}
@@ -17,6 +17,7 @@ export const ProjectSection = () => {
           netlify={project.netlify}
           github={project.github}
           image={project.image}
+          index={index}
         />
       ))}
     </>

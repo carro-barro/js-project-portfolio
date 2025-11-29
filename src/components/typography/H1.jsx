@@ -6,8 +6,7 @@ const StyledHeading = styled.h1`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: black;
 `
-export const H1 = () => {
-  return <StyledHeading></StyledHeading>
+export const H1 = ({ children }) => {
+  return <StyledHeading>{children}</StyledHeading>
 } 

@@ -3,6 +3,7 @@ import { ArticleHeading } from "./ArticleHeading"
 import { ArticleCard } from "./ArticleCard"
 import Data from "../../data/articles.json"
 
+
 export const ArticleSection = () => {
   return (
     <>
@@ -10,7 +11,7 @@ export const ArticleSection = () => {
       {Data.articles.map(article => (
         <ArticleCard
           key={article.name}
-          dates={article.date}
+          date={[article.date]}
           name={article.name}
           info={article.info}
           link={article.link}

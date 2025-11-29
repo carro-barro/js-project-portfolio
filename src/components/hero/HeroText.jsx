@@ -6,9 +6,11 @@ const StyledTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 782px;
   margin: 0 auto;
   color: black;
+  gap: 16px;
 `
 
 export const HeroText = () => {

@@ -7,9 +7,7 @@ const StyledTextContainer = styled.div`
   display: flex;
   width: 580px;
   flex-direction: column;
-  gap: 32px;
 `
-
 export const ProjectCardText = ({ name, info }) => {
   return (
     <StyledTextContainer>

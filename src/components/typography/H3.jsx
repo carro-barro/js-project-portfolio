@@ -5,9 +5,8 @@ const StyledHeading = styled.h3`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: black;
   margin: 0;
 `
-export const H3 = () => {
-  return <H3></H3>
+export const H3 = ({ children }) => {
+  return <StyledHeading>{children}</StyledHeading>
 }
