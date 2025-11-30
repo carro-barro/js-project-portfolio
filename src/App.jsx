@@ -7,6 +7,10 @@ import { ArticleSection } from "./components/articles/ArticleSection"
 import { FooterSection } from "./components/footer/FooterSection"
 
 const GlobalStyles = createGlobalStyle`
+* {
+box-sizing: border-box;
+}
+
 
 body {
 font-family: "Poppins", sans-serif;

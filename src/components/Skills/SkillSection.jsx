@@ -4,12 +4,21 @@ import { SkillInfoCard } from "./SkillInfoCard"
 
 const StyledSkillSection = styled.div`
 display: flex;
-padding: 128px 0;
+
 flex-direction: column;
 align-items: center;
 align-self: stretch;
-background: #000;
-color: white;
+background: ${({ theme }) => theme.color.primary};
+color: ${({ theme }) => theme.color.secondary};
+padding: 64px 16px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 64px 24px;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    padding: 128px 0;
+  }
 `
 
 const skillsData = [
@@ -33,11 +42,26 @@ const skillsData = [
 
 const StyledCardContainer = styled.div`
   display: flex;
-  justify-content: center;
   gap: 24px;
   max-width: 803px;
   width: 90%;
   margin-top: 0;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-direction: column;
+  
+   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    align-items: center;
+    align-self: center;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    flex-direction: row;
+    width: 982px;
+    justify-content: center;
+    align-self: center;
+   align-items: flex-start;
+  }
 `
 
 export const SkillSection = () => {

@@ -6,6 +6,13 @@ const StyledInfoContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    align-items: center;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    align-items: flex-start;
+  }
 `
 
 export const SkillInfo = ({ info }) => {

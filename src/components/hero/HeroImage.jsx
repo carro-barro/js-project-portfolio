@@ -24,7 +24,6 @@ const StyledImage = styled.img`
   border-radius: 12px;
   ${props => getPositionStyling(props.$position)};
 
-  /* MOBILE */
   width: 144px;
   height: 154px;
 
@@ -35,12 +34,10 @@ const StyledImage = styled.img`
         ? `margin-left: -76px; margin-top: 26px;`
         : `margin: 16px 0;`}
 
-  /* TABLET */
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    width: 200px;
-    height: 220px;
+    width: 260px;
+    height: 277px;
 
-      /* Apply correct desktop overlap */
     ${props =>
     props.$position === "left"
       ? `margin-right: -114px; margin-top: 32px;`
@@ -49,12 +46,10 @@ const StyledImage = styled.img`
         : `margin: 16px 0;`}
 }
 
-  /* DESKTOP */
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 358px;
     height: 382px;
 
-    /* Apply correct desktop overlap */
     ${props =>
     props.$position === "left"
       ? `margin-right: -160px; margin-top: 43px;`

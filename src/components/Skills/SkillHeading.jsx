@@ -2,8 +2,7 @@ import styled from "styled-components"
 import { H2 } from "../typography/H2"
 
 const StyledHeading = styled(H2)`
-color: white;
-margin: 0;
+color: ${({ theme }) => theme.color.secondary};
 `
 
 export const SkillHeading = () => {

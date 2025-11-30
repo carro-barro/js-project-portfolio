@@ -7,30 +7,44 @@ import { Tag } from "../assets/Tag"
 const StyledArticleCard = styled.div`
   display: flex;
   align-items: center;
-  gap: 125px;
   align-self: stretch;
   justify-self: center;
-  max-width: 1195px;
-  widtH: 90%;
-  max-height: 311px;
-  margin: 0 auto 128px auto;
+  gap: 32px;
+  margin: 0 auto 64px auto;
+  flex-direction: column;
+  
 
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    gap: 125px;
+    margin: 0 auto 128px auto;
+    
+  }
 `
 const StyledTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`
-
-const StyledTextContent = styled.div`
  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
-  width: 520px
+flex-direction: column;
+align-items: center;
+gap: 32px;
+align-self: stretch;
+width: 327px;
+
+@media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    width: 464px;
+    flex: 1 0 0;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 580px;
+    gap: 16px;
+  }
 
 `
+
 const StyledTagContainer = styled.div`
   display: flex;
   align-items: flex-start;
@@ -54,20 +68,18 @@ export const ArticleCard = ({ name, info, image, date, link }) => {
     <StyledArticleCard>
       <ArticleCardImage src={image} alt={`Illustration for article: ${name}`} />
       <StyledTextContainer>
-        <StyledTextContent>
-          <StyledTagContainer>
-            {date.map(singleDate => (
-              <StyledArticleTag key={singleDate} tag={singleDate} />
-            ))}
-          </StyledTagContainer>
-          <ArticleCardText name={name} info={info} />
-          <StyledButtonContainer>
-            <Button
-              href={link}
-              text="Read article"
-              icon="/icons/Netlify.svg" />
-          </StyledButtonContainer>
-        </StyledTextContent>
+        <StyledTagContainer>
+          {date.map(singleDate => (
+            <StyledArticleTag key={singleDate} tag={singleDate} />
+          ))}
+        </StyledTagContainer>
+        <ArticleCardText name={name} info={info} />
+        <StyledButtonContainer>
+          <Button
+            href={link}
+            text="Read article"
+            icon="/icons/Netlify.svg" />
+        </StyledButtonContainer>
       </StyledTextContainer>
     </StyledArticleCard>
   )

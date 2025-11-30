@@ -1,13 +1,7 @@
-import styled from "styled-components"
 
-const StyledHeading = styled.h2`
-margin: 0;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-`
+import { H2 } from "../typography/H2"
+
 
 export const FooterHeading = () => {
-  return <StyledHeading>Let's Talk</StyledHeading>
+  return <H2>Let's Talk</H2>
 }

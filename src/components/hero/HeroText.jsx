@@ -7,33 +7,15 @@ const StyledTextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 782px;
   margin: 16px auto;
-  color: black;
+  color: ${({ theme }) => theme.color.primary};
   gap: 16px;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 30px;
-  }
-  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    font-size: 30px;
-`
-const StyledHeading = styled(H3)`
-   font-size: 20px;
-
-   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 30px;
-  }
-  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    font-size: 30px;
-  }
-`
-const StyledText = styled(P)`
-   font-size: 24px;
+  align-self: stretch;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    font-size: 30px;
+    width: 782px;
   }
+
 `
 
 export const HeroText = () => {

@@ -1,12 +1,12 @@
-import data from "../../data/projects.json"
+
 import styled from "styled-components"
 import { H3 } from "../typography/H3"
 import { P } from "../typography/P"
 
 const StyledTextContainer = styled.div`
   display: flex;
-  width: 580px;
   flex-direction: column;
+  align-self: stretch;
 `
 export const ProjectCardText = ({ name, info }) => {
   return (

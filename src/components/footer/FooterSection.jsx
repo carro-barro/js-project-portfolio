@@ -5,20 +5,20 @@ import { FooterContactInfo } from "./FooterContactInfo"
 import { FooterSocials } from "./FooterSocials"
 
 const StyledFooter = styled.footer`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 128px 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: ${({ theme }) => theme.color.primary};
+  color: ${({ theme }) => theme.color.secondary};
   text-align: center;
   gap: 32px;
 `
 const StyledSocialsContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: flex-end;
-gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 32px;
 `
 
 export const FooterSection = (props) => {

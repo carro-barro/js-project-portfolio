@@ -6,21 +6,23 @@ import { Tag } from "../assets/Tag"
 import { Button } from "../assets/Button"
 
 
-
 const StyledProjectCard = styled.div`
   display: flex;
   align-items: center;
-  gap: 125px;
+  gap: 64px;
   align-self: stretch;
   justify-content: center;
   max-width: 1184px;
   width: 90%;
   margin: 0 auto 128px auto;
-  flex-direction: ${props => (props.$reverse ? 'row-reverse' : 'row')}
+  flex-direction: column;
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    flex-direction: ${props => (props.$reverse ? 'row-reverse' : 'row')};
+    gap: 125px;
+  }
 `
-const StyledLeftContainer = styled.div`
-display: flex;
-`
+
 
 const StyledLeftContent = styled.div`
  display: flex;
@@ -29,8 +31,6 @@ const StyledLeftContent = styled.div`
   justify-content: center;
   gap: 16px;
   align-self: stretch;
-  max-height: 322px;
-  max-width: 580px;
 `
 const StyledTagContainer = styled.div`
   display: flex;
@@ -56,27 +56,25 @@ export const ProjectCard = ({ name, info, netlify, github, image, tags, index })
   return (
     <StyledProjectCard $reverse={shouldReverse}>
       <ProjectCardImage src={image} alt={`Screenshot of ${name}`} />
-      <StyledLeftContainer>
-        <StyledLeftContent>
-          <StyledTagContainer>
-            {tags.map(tag => (
-              <StyledProjectTag key={tag} tag={tag} />
-            ))}
-          </StyledTagContainer>
-          <ProjectCardText name={name} info={info} />
-          <StyledButtonContainer>
-            <Button
-              href={netlify}
-              text="Live Demo"
-              icon="/icons/Netlify.svg" />
-            <Button
-              href={github}
-              text="View code"
-              icon="/icons/Github.svg" />
-          </StyledButtonContainer>
-        </StyledLeftContent>
-      </StyledLeftContainer>
-    </StyledProjectCard>
+      <StyledLeftContent>
+        <StyledTagContainer>
+          {tags.map(tag => (
+            <StyledProjectTag key={tag} tag={tag} />
+          ))}
+        </StyledTagContainer>
+        <ProjectCardText name={name} info={info} />
+        <StyledButtonContainer>
+          <Button
+            href={netlify}
+            text="Live Demo"
+            icon="/icons/Netlify.svg" />
+          <Button
+            href={github}
+            text="View code"
+            icon="/icons/Github.svg" />
+        </StyledButtonContainer>
+      </StyledLeftContent>
+    </StyledProjectCard >
   )
 }
 

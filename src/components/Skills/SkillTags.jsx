@@ -9,12 +9,12 @@ justify-content: center;
 align-items: center;
 align-self: stretch;
 border-radius: 4px;
-border: 1px solid #FFF;
-background: #000;
+border: 1px solid ${({ theme }) => theme.color.secondary};
+background: ${({ theme }) => theme.color.primary};
 `
 
 const StyledTagText = styled.p`
-color: #FFF;
+color: ${({ theme }) => theme.color.secondary};
 font-size: 16px;
 font-style: normal;
 font-weight: 500;

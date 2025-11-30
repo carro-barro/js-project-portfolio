@@ -1,13 +1,8 @@
 import styled from "styled-components"
+import { P } from "../typography/P"
 
-const StyledText = styled.p`
-  color: #FFF;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+const StyledText = styled(P)`
+  color: ${({ theme }) => theme.color.secondary};
 `
 
 export const TechText = () => {
