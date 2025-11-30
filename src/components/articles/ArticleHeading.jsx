@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { H2 } from "../typography/H2"
 
 const StyledHeadingContainer = styled.div`
-margin: 128px 0;
+margin: 128px auto;
 `
 
 export const ArticleHeading = () => {
