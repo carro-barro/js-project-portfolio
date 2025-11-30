@@ -50,6 +50,7 @@ const StyledTagContainer = styled.div`
   align-items: flex-start;
   gap: 4px;
   align-self: stretch;
+  flex-wrap: wrap;
 `
 
 const StyledButtonContainer = styled.div`
