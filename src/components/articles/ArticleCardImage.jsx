@@ -4,13 +4,14 @@ const StyledImage = styled.img`
   object-fit: cover;
   border-radius: 12px;
   align-self: stretch;
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
   width: 100%;
   height: 200px;
-
+}
 
 @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
   width: 200px;
-  height: 338px;
 }
 
 @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {

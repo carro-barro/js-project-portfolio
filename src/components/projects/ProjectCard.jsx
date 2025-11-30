@@ -46,6 +46,11 @@ const StyledButtonContainer = styled.div`
   gap: 8px;
   align-self: stretch;
 `
+const StyledButton = styled(Button)`
+  background: ${({ theme }) => theme.color.primary};
+  color: ${({ theme }) => theme.color.secondary};
+`
+
 const StyledProjectTag = styled(Tag)`
 flex: 1 0 0;
 `
@@ -64,11 +69,11 @@ export const ProjectCard = ({ name, info, netlify, github, image, tags, index })
         </StyledTagContainer>
         <ProjectCardText name={name} info={info} />
         <StyledButtonContainer>
-          <Button
+          <StyledButton
             href={netlify}
             text="Live Demo"
             icon="/icons/Netlify.svg" />
-          <Button
+          <StyledButton
             href={github}
             text="View code"
             icon="/icons/Github.svg" />

@@ -6,12 +6,12 @@ padding: 2px 6px;
 justify-content: center;
 height: 28px;
 border-radius: 4px;
-border: 1px solid #000;
-background: #FFF;
+border: 1px solid ${({ theme }) => theme.color.primary};
+background: ${({ theme }) => theme.color.secondary};
 `
 
 const StyledTagText = styled.p`
-color: #000;
+color: ${({ theme }) => theme.color.primary};
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;

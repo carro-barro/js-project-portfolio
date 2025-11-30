@@ -8,8 +8,6 @@ const StyledButton = styled.a`
   align-items: center;
   gap: 16px;
   border-radius: 12px;
-  background: #000;
-  color: #fff;
   font-size: 18px;
   text-decoration: none;
   cursor: pointer;
@@ -22,10 +20,10 @@ const IconWrapper = styled.span`
   align-items: center;
 `
 
-export const Button = ({ icon, text, href }) => {
+export const Button = ({ icon, text, href, className }) => {
   return (
     <>
-      <StyledButton href={href}>
+      <StyledButton href={href} className={className}>
         <IconWrapper>
           <img src={icon} alt="" />
         </IconWrapper>
