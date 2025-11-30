@@ -42,9 +42,8 @@ const StyledButtonContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
-  margin-top: 32px;
+  margin-top: 16px;
 `
 const StyledArticleTag = styled(Tag)`
 width: 142px;

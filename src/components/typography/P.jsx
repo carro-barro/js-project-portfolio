@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const StyledText = styled.p`
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

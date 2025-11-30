@@ -8,9 +8,32 @@ const StyledTextContainer = styled.div`
   align-items: center;
   text-align: center;
   width: 782px;
-  margin: 0 auto;
+  margin: 16px auto;
   color: black;
   gap: 16px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 30px;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: 30px;
+`
+const StyledHeading = styled(H3)`
+   font-size: 20px;
+
+   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 30px;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: 30px;
+  }
+`
+const StyledText = styled(P)`
+   font-size: 24px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: 30px;
+  }
 `
 
 export const HeroText = () => {

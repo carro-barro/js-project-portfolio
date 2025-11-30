@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { SkillInfo } from "./SkillInfo"
 import { SkillTags } from "./SkillTags"
 
-// width: 177px;
 const StyledInfoCard = styled.div`
 display: flex;
 width: 250px;

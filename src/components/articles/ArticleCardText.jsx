@@ -7,7 +7,7 @@ const StyledTextContainer = styled.div`
   display: flex;
   width: 580px;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 `
 
 export const ArticleCardText = ({ name, info }) => {

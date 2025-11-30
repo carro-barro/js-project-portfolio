@@ -7,7 +7,6 @@ display: flex;
 padding: 128px 0;
 flex-direction: column;
 align-items: center;
-gap: 16px;
 align-self: stretch;
 background: #000;
 color: white;
@@ -34,10 +33,11 @@ const skillsData = [
 
 const StyledCardContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  max-width: 1184px;
+  justify-content: center;
+  gap: 24px;
+  max-width: 803px;
   width: 90%;
-  margin-top: 48px;
+  margin-top: 0;
 `
 
 export const SkillSection = () => {

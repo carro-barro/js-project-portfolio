@@ -25,7 +25,7 @@ export const FooterSection = (props) => {
   return (
     <StyledFooter>
       <FooterHeading></FooterHeading>
-      <FooterAvatar src="/images/hero/Headshot-heroImg-1.png"></FooterAvatar>
+      <FooterAvatar src="/images/hero/Headshot-heroImg-1.png" alt="professional headshot of carolina"></FooterAvatar>
       <FooterContactInfo></FooterContactInfo>
       <StyledSocialsContainer>
         <FooterSocials href="https://www.linkedin.com/in/carolina-oldertz-a875601b8/" src="/icons/Btn - linkedin.svg" alt="Linkedin icon"></FooterSocials>
