@@ -3,15 +3,15 @@ import { HeroHeading } from "./HeroHeading"
 import { HeroImage } from "./HeroImage"
 import { HeroText } from "./HeroText"
 
+
 const StyledImageContainer = styled.div`
-display: flex;
-justify-content: center;
-
-margin: 32px 0;
-
-
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
 `
-export const StyledHeroSection = styled.section`
+
+
+const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,10 +28,11 @@ export const StyledHeroSection = styled.section`
 `
 
 
+
 export const HeroSection = (props) => {
   return (
     <StyledHeroSection>
-      <HeroHeading ></HeroHeading>
+      <HeroHeading></HeroHeading>
       <StyledImageContainer>
         <HeroImage position="left" src="/images/hero/SideProfile-heroImg-2.jpg" alt="side profile picture of carolina" />
         <HeroImage position="middle" src="/images/hero/Headshot-heroImg-1.png" alt="professional headshot of carolina" />

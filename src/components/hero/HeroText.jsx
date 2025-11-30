@@ -15,7 +15,6 @@ const StyledTextContainer = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 782px;
   }
-
 `
 
 export const HeroText = () => {
