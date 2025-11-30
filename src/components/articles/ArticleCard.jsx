@@ -8,7 +8,6 @@ const StyledArticleCard = styled.div`
   display: flex;
   align-items: center;
   align-self: stretch;
-  justify-self: center;
   gap: 32px;
   margin: 0 auto 64px auto;
   flex-direction: column;
@@ -18,6 +17,7 @@ const StyledArticleCard = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     align-items: flex-start;
     flex-direction: row;
+    width: 100%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -32,7 +32,6 @@ flex-direction: column;
 align-items: center;
 gap: 32px;
 align-self: stretch;
-width: 327px;
 
 @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 464px;
