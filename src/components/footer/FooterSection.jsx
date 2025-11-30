@@ -31,8 +31,6 @@ export const FooterSection = (props) => {
         <FooterSocials href="https://www.linkedin.com/in/carolina-oldertz-a875601b8/" src="/icons/Btn - linkedin.svg" alt="Linkedin icon"></FooterSocials>
         <FooterSocials href="https://github.com/carro-barro" src="/icons/Btn - github.svg" alt="Github icon"></FooterSocials>
         <FooterSocials href="https://stackoverflowteams.com/c/technigo/users/706/?tab=profile" src="/icons/Btn - stackoverflow.svg" alt="Stackoverflow icon"></FooterSocials>
-        <FooterSocials href="https://stackoverflowteams.com/c/technigo/users/706/?tab=profile" src="/icons/Btn - twitter.svg" alt="Twitter icon"></FooterSocials>
-        <FooterSocials href="https://stackoverflowteams.com/c/technigo/users/706/?tab=profile" src="/icons/Btn - instagram.svg" alt="Instagram icon"></FooterSocials>
       </StyledSocialsContainer>
     </StyledFooter>
   )

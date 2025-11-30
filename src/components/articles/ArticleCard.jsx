@@ -60,6 +60,11 @@ const StyledButtonContainer = styled.div`
   align-self: stretch;
   margin-top: 16px;
 `
+const StyledButton = styled(Button)`
+  background: ${({ theme }) => theme.color.primary};
+  color: ${({ theme }) => theme.color.secondary};
+`
+
 const StyledArticleTag = styled(Tag)`
 width: 142px;
 `
@@ -76,7 +81,7 @@ export const ArticleCard = ({ name, info, image, date, link }) => {
         </StyledTagContainer>
         <ArticleCardText name={name} info={info} />
         <StyledButtonContainer>
-          <Button
+          <StyledButton
             href={link}
             text="Read article"
             icon="/icons/Netlify.svg" />
