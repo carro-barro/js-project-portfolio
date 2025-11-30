@@ -12,7 +12,8 @@ const StyledArticleCard = styled.div`
   gap: 32px;
   margin: 0 auto 64px auto;
   flex-direction: column;
-  
+  width: 90%;
+  max-width: 1195px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     align-items: flex-start;

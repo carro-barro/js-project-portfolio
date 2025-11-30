@@ -5,7 +5,6 @@ const StyledImage = styled.img`
   border-radius: 12px;
   align-self: stretch;
   width: 100%;
-  width: 327px;
   height: 200px;
 
 
