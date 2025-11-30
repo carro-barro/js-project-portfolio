@@ -17,7 +17,7 @@ const StyledArticleCard = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     align-items: flex-start;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -29,7 +29,7 @@ const StyledArticleCard = styled.div`
 const StyledTextContainer = styled.div`
  display: flex;
 flex-direction: column;
-align-items: center;
+align-items: flex-start;
 gap: 32px;
 align-self: stretch;
 
