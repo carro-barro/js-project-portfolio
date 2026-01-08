@@ -24,19 +24,60 @@ padding: 64px 16px;
 const skillsData = [
   {
     tag: "Code",
-    info: "HTML5\nCSS3\nJavascript ES6\nTypeScript\nStyled Components\nGitHub",
+    info: [
+      "HTML5",
+      "CSS3",
+      "Javascript ES6",
+      "TypeScript",
+      "Styled Components",
+      "GitHub"
+    ]
   },
   {
     tag: "Toolbox",
-    info: "Atom\nPostman\nAdobe Photoshop\nAdobe Illustrator\nAdobe InDesign\nAdobe Acrobat\nAdobe Premiere Pro & Rush\nAdobe After Effects\nCamera raw\nBridge\nWordpress\nSitecore (CMS)\nSitevison (CMS)\nShopify\nFigma\nMicrosoft (Word, ppt, etc)\nSlack",
+    info: [
+      "Atom",
+      "Postman",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "Adobe Acrobat",
+      "Adobe Premiere Pro & Rush",
+      "Adobe After Effects",
+      "Camera raw",
+      "Bridge",
+      "Wordpress",
+      "Sitecore (CMS)",
+      "Sitevison (CMS)",
+      "Shopify",
+      "Figma",
+      "Microsoft (Word, ppt, etc)",
+      "Slack"
+    ]
   },
   {
     tag: "Upcoming",
-    info: "Node.js\nReact\nMongoDB\nExpress.js",
+    info: [
+      "Node.js",
+      "React",
+      "MongoDB",
+      "Express.js"
+    ]
   },
   {
     tag: "More",
-    info: "Branding\nStrategy\nProcess Design\nConcept Development\nAgile methodology\nAccessibility (WCAG)\nVersion Control (Git workflows)\nCreative Problem-Solving\nCross-functional Collaboration\nUX & UI",
+    info: [
+      "Branding",
+      "Strategy",
+      "Process Design",
+      "Concept Development",
+      "Agile methodology",
+      "Accessibility (WCAG)",
+      "Version Control (Git workflows)",
+      "Creative Problem-Solving",
+      "Cross-functional Collaboration",
+      "UX & UI"
+    ]
   },
 ]
 

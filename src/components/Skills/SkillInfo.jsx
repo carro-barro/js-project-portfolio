@@ -16,13 +16,12 @@ const StyledInfoContainer = styled.div`
 `
 
 export const SkillInfo = ({ info }) => {
-  const skillItems = info.split('\n')
 
   return (
     <StyledInfoContainer>
-      {skillItems.map((item, index) => (
+      {info.map((item, index) => (
         <P key={index} style={{ color: 'white' }}>
-          {item.trim()}
+          {item}
         </P>
       ))}
     </StyledInfoContainer>

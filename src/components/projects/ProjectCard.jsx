@@ -55,12 +55,12 @@ const StyledProjectTag = styled(Tag)`
 flex: 1 0 0;
 `
 
-export const ProjectCard = ({ name, info, netlify, github, image, tags, index }) => {
+export const ProjectCard = ({ name, info, netlify, github, image, tags, index, position }) => {
   const shouldReverse = index % 2 !== 0
 
   return (
     <StyledProjectCard $reverse={shouldReverse}>
-      <ProjectCardImage src={image} alt={`Screenshot of ${name}`} />
+      <ProjectCardImage src={image} alt={`Screenshot of ${name}`} position={position} />
       <StyledLeftContent>
         <StyledTagContainer>
           {tags.map(tag => (

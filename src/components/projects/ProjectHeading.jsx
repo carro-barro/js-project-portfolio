@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { H2 } from "../typography/H2"
+import { Typography } from "../typography/Typography"
 
 const StyledHeadingContainer = styled.div`
 margin: 64px 0;
@@ -12,7 +12,7 @@ margin: 64px 0;
 export const ProjectHeading = () => {
   return (
     <StyledHeadingContainer>
-      <H2>Featured Projects</H2>
+      <Typography variant="h2">Featured Projects</Typography>
     </StyledHeadingContainer>
   )
 }

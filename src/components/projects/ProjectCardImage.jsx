@@ -5,7 +5,7 @@ const StyledImage = styled.img`
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  object-position: ${props => (props.$altText === 'Screenshot of RECIPE LIBRARY' ? 'left' : 'center')};
+  object-position: ${props => props.$position || 'center'};
   height: 479px;
   align-self: stretch;
 
@@ -16,6 +16,6 @@ const StyledImage = styled.img`
   }
 
 `
-export const ProjectCardImage = ({ src, alt }) => {
-  return <StyledImage src={src} alt={alt} $altText={alt} />
+export const ProjectCardImage = ({ src, alt, position }) => {
+  return <StyledImage src={src} alt={alt} $position={position} />
 }

@@ -1,7 +1,5 @@
-
-import { H2 } from "../typography/H2"
-
+import { Typography } from "../typography/Typography"
 
 export const FooterHeading = () => {
-  return <H2>Let's Talk</H2>
+  return <Typography variant="h2">Let's Talk</Typography>
 }

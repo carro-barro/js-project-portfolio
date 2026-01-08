@@ -13,10 +13,8 @@ const SocialIconLink = styled.a`
 
 export const FooterSocials = (props) => {
   return (
-    <>
-      <SocialIconLink href={props.href}>
-        <img src={props.src} alt={props.alt} />
-      </SocialIconLink>
-    </>
+    <SocialIconLink href={props.href}>
+      <img src={props.src} alt={props.alt} />
+    </SocialIconLink>
   )
 }

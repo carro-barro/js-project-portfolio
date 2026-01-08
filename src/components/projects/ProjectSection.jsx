@@ -25,6 +25,7 @@ export const ProjectSection = () => {
           netlify={project.netlify}
           github={project.github}
           image={project.image}
+          position={project.position}
           index={index}
         />
       ))}

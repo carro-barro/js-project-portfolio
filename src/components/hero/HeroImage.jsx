@@ -57,7 +57,6 @@ const StyledImage = styled.img`
         ? `margin-left: -160px; margin-top: 43px;`
         : `margin: 16px 0;`}
   }
-}
 `
 
 export const HeroImage = (props) => {

@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import { H3 } from "../typography/H3"
-import { P } from "../typography/P"
+import { Typography } from "../typography/Typography"
 
 const StyledTextContainer = styled.div`
   display: flex;
@@ -20,8 +19,8 @@ const StyledTextContainer = styled.div`
 export const HeroText = () => {
   return (
     <StyledTextContainer>
-      <H3>Web Developer with a Background in Content creation and marketing</H3>
-      <P>I'm a driven Web developer who turned my creative background into a new passion for coding. I thrive on solving complex challenges and bring fresh, design-minded thinking to every project. </P>
+      <Typography variant="h3">Web Developer with a Background in Content creation and marketing</Typography>
+      <Typography variant="p">I'm a driven Web developer who turned my creative background into a new passion for coding. I thrive on solving complex challenges and bring fresh, design-minded thinking to every project. </Typography>
     </StyledTextContainer>
   )
 }

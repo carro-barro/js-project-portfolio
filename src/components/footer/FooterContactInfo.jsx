@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { P } from "../typography/P"
+import { Typography } from "../typography/Typography"
 
 
 const StyledTextContainer = styled.div`
@@ -20,9 +20,9 @@ gap: 8px;
 export const FooterContactInfo = () => {
   return (
     <StyledTextContainer>
-      <P>Carolina Oldertz</P>
-      <P>+46(0)72 251 25 95</P>
-      <P>carolina.oldertz@gmail.com</P>
+      <Typography variant="p">Carolina Oldertz</Typography>
+      <Typography variant="p">+46(0)72 251 25 95</Typography>
+      <Typography variant="p">carolina.oldertz@gmail.com</Typography>
     </StyledTextContainer>
   )
 }

@@ -14,8 +14,9 @@
     },
     {
       "name": "RECIPE LIBRARY",
-      "info": "Using spoonaculars API I have fetched a library of recipes that displays ingredients, cooking time and meal type. You can filter and sort by different categories and search for your recipe and aslo with a button click to geta random recipe.",
+      "info": "Using spoonaculars API I have fetched a library of recipes that displays ingredients, cooking time and meal type. You can filter and sort by different categories and search for your recipe and also with a button click to geta random recipe.",
       "image": "/images/projects/Recipe-library.png",
+      "position": "left",
       "tags": [
         "HTML5",
         "CSS3",

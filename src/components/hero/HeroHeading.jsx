@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import { H1 } from "../typography/H1"
-import { H3 } from "../typography/H3"
+import { Typography } from "../typography/Typography"
 
 const StyledHeadingContainer = styled.div`
   display: flex;
@@ -22,8 +21,8 @@ const StyledHeadingContainer = styled.div`
 export const HeroHeading = () => {
   return (
     <StyledHeadingContainer>
-      <H3>Hi there, I'm</H3>
-      <H1>Carolina Oldertz</H1>
+      <Typography variant="h3">Hi there, I'm</Typography>
+      <Typography variant="h1">Carolina Oldertz</Typography>
     </StyledHeadingContainer>
   )
 }
